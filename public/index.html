@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabel Hurricane Visualization</title>
+    <link rel="icon" type="image/x-icon" href="/hurricane/assets/favicon-C_bw6ieE.ico">
+  <script type="module" crossorigin src="/hurricane/assets/index-B88ztX_M.js"></script>
+  <link rel="stylesheet" crossorigin href="/hurricane/assets/index-G_q2cA3B.css">
+</head>
+<body>
+    <img class="infoButton attention" src="/hurricane/data/info-circle.svg" alt="info button" onclick="collapseInfo()"/>
+    <div class="type3 infoBox ">
+        Loading data, please wait. It takes some time. (<div class="loadedFiles">0</div>/5 loaded)
+    </div>
+    <div class="type3 collapsed" id="collapseInfo">
+        This application visualizes <strong>Hurricane Isabel</strong>, which struck in September 2003. <br>
+        The scene focuses on the Southeastern United States, displaying:
+        <ul>
+            <li><strong>Wind direction and strength </strong> as streamlines</li>
+            <li><strong>Temperature</strong> as a cut plane </li>
+        </ul>
+        The data is sourced from the Weather Research and Forecasting (WRF) model, covering an area of <br> 2000 × 2000 × 19.8 km. <br>
+        <strong>Camera controls:</strong>
+        <ul>
+            <li><strong>Left button:</strong> Pan the camera</li>
+            <li><strong>Middle button:</strong> Zoom</li>
+            <li><strong>Right button:</strong> Move the camera</li>
+        </ul>
+        Users can adjust various visualization parameters,
+        including the position and contouring of the temperature cut plane,
+        as well as streamline settings such as density, radius, and other properties.
+    </div>
+</body>
+
+<script>
+    function collapseInfo() {
+        const elem = document.getElementById('collapseInfo');
+        elem.classList.toggle("collapsed");
+        document.getElementsByClassName('infoButton')[0].classList.remove('attention');
+    }
+</script>
+</html>

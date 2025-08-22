@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabel Hurricane Visualization</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <script type="module" src="./js/main.js"></script>
+    <img class="infoButton" src="./data/info-circle.svg" alt="info button" onclick="collapseInfo()"/>
+    <div class="type3 infoBox ">
+        Loading data, please wait. It takes some time. (<div class="loadedFiles">0</div>/5 loaded)
+    </div>
+    <div class="type3" id="collapseInfo">
+        <button class="closeButton" onclick="collapseInfo()" title="Close">×</button>
+        <div class="info-tabs">
+            <button class="tab-button active" onclick="showTab('about')">About</button>
+            <button class="tab-button" onclick="showTab('controls')">Controls</button>
+        </div>
+        
+        <div id="about-tab" class="tab-content active">
+            <h3>Hurricane Isabel Visualization</h3>
+            <p>This application visualizes <strong>Hurricane Isabel</strong>, which struck in September 2003.</p>
+            <p>The scene focuses on the Southeastern United States, displaying:</p>
+            <ul>
+                <li><strong>Wind direction and strength</strong> as streamlines</li>
+                <li><strong>Temperature</strong> as a cut plane</li>
+            </ul>
+            <h3>Data Source</h3>
+            <p>Weather Research and Forecasting (WRF) model data</p>
+            <ul>
+                <li><strong>Coverage:</strong> 2000 × 2000 × 19.8 km</li>
+                <li><strong>Resolution:</strong> 250 × 250 × 100 grid points</li>
+            </ul>
+        </div>
+        
+        <div id="controls-tab" class="tab-content">
+            <h3>Camera Controls</h3>
+            <ul>
+                <li><strong>Left click + drag:</strong> Rotate camera</li>
+                <li><strong>Right click + drag:</strong> Pan camera</li>
+                <li><strong>Mouse wheel:</strong> Zoom in/out</li>
+                <li><strong>Touch (1 finger):</strong> Rotate</li>
+                <li><strong>Touch (2 fingers):</strong> Pan & zoom</li>
+            </ul>
+            <h3>Visualization Controls</h3>
+            <p>Use the control panel on the right to adjust:</p>
+            <ul>
+                <li>Streamline density and appearance</li>
+                <li>Temperature cut plane position</li>
+                <li>Contour line visibility</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    function collapseInfo() {
+        const elem = document.getElementById('collapseInfo');
+        elem.classList.toggle("collapsed");
+    }
+    
+    function showTab(tabName) {
+        // Hide all tab contents
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.classList.remove('active'));
+        
+        // Remove active class from all buttons
+        const buttons = document.querySelectorAll('.tab-button');
+        buttons.forEach(button => button.classList.remove('active'));
+        
+        // Show selected tab content
+        document.getElementById(tabName + '-tab').classList.add('active');
+        
+        // Add active class to clicked button
+        event.target.classList.add('active');
+    }
+</script>
+</html>
