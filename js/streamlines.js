@@ -1,7 +1,7 @@
 import { readFile } from "./fileReader";
-import * as THREE from "three";
+import * as THREE from "../node_modules/three/build/three.module.js";
 import { StreamlineTubeGeometry } from "./StreamlineTube.js";
-import { Lut } from 'three/examples/jsm/math/Lut.js'
+import { Lut } from '../node_modules/three/examples/jsm/math/Lut.js'
 import {generateSprite, createTitle, placeText} from "./legendUtils";
 import { objectPool } from "./ObjectPool.js";
 

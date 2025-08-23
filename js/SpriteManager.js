@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from '../node_modules/three/build/three.module.js';
 
 // tornado sprite source:
 // https://www.deviantart.com/duannian/art/Tornado-Sprite-sheet-NZC-effect-1031952550
