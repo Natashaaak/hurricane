@@ -1,8 +1,8 @@
-import { readFile } from "./fileReader";
-import * as THREE from "../node_modules/three/build/three.module.js";
+import { readFile } from "./fileReader.js";
+import * as THREE from "three";
 import { StreamlineTubeGeometry } from "./StreamlineTube.js";
-import { Lut } from '../node_modules/three/examples/jsm/math/Lut.js'
-import {generateSprite, createTitle, placeText} from "./legendUtils";
+import { Lut } from 'three/examples/jsm/math/Lut.js'
+import {generateSprite, createTitle, placeText} from "./legendUtils.js";
 import { objectPool } from "./ObjectPool.js";
 
 const fileNameY = 'data/Vf25_2_interp.bin';

@@ -1,5 +1,5 @@
-import * as THREE from "../node_modules/three/build/three.module.js";
-import {TextGeometry} from "../node_modules/three/examples/jsm/geometries/TextGeometry.js";
+import * as THREE from "three";
+import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry.js";
 
 const yPosSprite = 0.7;
 const yPosTitle = 0.4875;

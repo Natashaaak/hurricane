@@ -1,8 +1,8 @@
-import { readFile} from "./fileReader";
-import * as THREE from '../node_modules/three/build/three.module.js';
-import { Lut } from './myLut'
-import {TextGeometry} from "../node_modules/three/examples/jsm/geometries/TextGeometry.js";
-import {createTitle, placeText, generateFancySprite} from "./legendUtils";
+import { readFile} from "./fileReader.js";
+import * as THREE from 'three';
+import { Lut } from './myLut.js'
+import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry.js";
+import {createTitle, placeText, generateFancySprite} from "./legendUtils.js";
 
 const fileName = 'data/TCf25.bin';
 const minTemp = -78;

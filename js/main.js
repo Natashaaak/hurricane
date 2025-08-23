@@ -1,11 +1,11 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import { FontLoader } from '../node_modules/three/examples/jsm/loaders/FontLoader.js';
-import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { ViewHelper } from "./ViewHelper";
-import { GUI } from '../node_modules/three/examples/jsm/libs/lil-gui.module.min.js'
-import { CutPlane} from "./CutPlane";
-import { Streamlines } from "./streamlines";
-import {SpriteManager} from "./SpriteManager";
+import * as THREE from 'three';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { ViewHelper } from "./ViewHelper.js";
+import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js'
+import { CutPlane} from "./CutPlane.js";
+import { Streamlines } from "./streamlines.js";
+import {SpriteManager} from "./SpriteManager.js";
 
 let scene, uiScene, camera, orthoCamera, renderer, controls, helper, font;
 
