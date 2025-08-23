@@ -1,7 +1,7 @@
 import { readFile} from "./fileReader";
-import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from 'three';
 import { Lut } from './myLut'
-import {TextGeometry} from "three/addons/geometries/TextGeometry";
+import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry.js";
 import {createTitle, placeText, generateFancySprite} from "./legendUtils";
 
 const fileName = 'data/TCf25.bin';

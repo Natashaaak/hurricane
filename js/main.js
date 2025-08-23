@@ -1,7 +1,8 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import {FontLoader, OrbitControls} from 'three/addons';
+import * as THREE from 'three';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { ViewHelper } from "./ViewHelper";
-import { GUI } from 'three/addons/libs/lil-gui.module.min.js'
+import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js'
 import { CutPlane} from "./CutPlane";
 import { Streamlines } from "./streamlines";
 import {SpriteManager} from "./SpriteManager";

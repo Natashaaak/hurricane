@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import {Lut} from "three/addons/math/Lut";
+import {Lut} from "three/examples/jsm/math/Lut.js";
 
 const radialSegments = 6;
 const closed = false;
