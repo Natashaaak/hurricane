@@ -14,13 +14,13 @@ A 3D visualization of Hurricane Isabel using Three.js and Vite. This project dis
 
 ## Live Demo
 
-Visit the live application: [Hurricane Isabel Visualization](https://Natashaak.github.io/hurricane/)
+Visit the live application: [Hurricane Isabel Visualization](https://natashaaak.github.io/hurricane/)
 
 ## Local Development
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/[your-username]/hurricane.git
+   git clone https://github.com/natashaaak/hurricane.git
    cd hurricane
    ```
 
@@ -52,7 +52,7 @@ This project is configured for automatic deployment to GitHub Pages.
 
 1. Push your changes to the `main` branch
 2. GitHub Actions will automatically build and deploy to GitHub Pages
-3. Your site will be available at `https://Natashaak.github.io/hurricane/`
+3. Your site will be available at `https://natashaaak.github.io/hurricane/`
 
 ### Manual Deployment
 
