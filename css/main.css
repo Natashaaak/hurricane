@@ -116,6 +116,10 @@ ul {
         left: 10px;
         font-size: 14px;
     }
+    
+    .tab-content-wrapper {
+        min-height: 200px; /* Slightly smaller height on mobile */
+    }
 }
 
 @media (max-width: 480px) {
@@ -161,12 +165,25 @@ ul {
     font-weight: bold;
 }
 
+/* Tab content container to maintain consistent height */
+.tab-content-wrapper {
+    min-height: 280px; /* Set a consistent height for both tabs */
+    position: relative;
+}
+
 .tab-content {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .tab-content.active {
     display: block;
+    opacity: 1;
 }
 
 .tab-content h3 {
